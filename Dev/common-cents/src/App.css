@@ -1,0 +1,91 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+}
+
+.nav-wrapper {
+  background-color: #b7dffa;
+}
+
+.btn {
+  background-color: #2b87ba !important;
+  width: fit-content;
+}
+
+#toast-container {
+  top: 30px !important;
+  right: 20px !important;
+  left: auto !important;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+h4 {
+  width: 75%;
+  padding-left: 25%;
+  align-items: center;
+}
+.tab-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  height: 50px;
+  margin-top: 70px;
+}
+.sign-in-tab {
+  background-color: #ffffff;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-top-right-radius: 5px;
+}
+.create-account-tab {
+  background-color: #ffffff;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 5px;
+}
+.input-area {
+  background-color: #b7dffa;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  align-items: center;
+}
+input {
+  background-color: #ffffff !important;
+  width: 400px !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  border-radius: 5px !important;
+  padding-left: 10px !important;
+}
+
+input:focus {
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  padding-left: 120px;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer-wrapper {
+  background-color: #e5f8e2;
+  display: flex;
+  height: 200px;
+}
