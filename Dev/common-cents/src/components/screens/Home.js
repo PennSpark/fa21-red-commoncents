@@ -5,39 +5,47 @@ import plant1 from "./plant1.svg";
 const Home = () => {
     return (
         <div class="home-container">
-            <div class="intro-container">
-                <div class="greeting-container">
-                    <h1>Common Cents</h1>
-                    <p>Financial freedom within the reach of every student</p>
-                    <p>Empowering students to manage their money and reach financial independence.</p>
+            <div class="desktop-1">
+                <div class="intro-container">
+                    <div class="greeting-container">
+                        <h1>Common Cents</h1>
+                        <p>Financial freedom within the reach of every student</p>
+                        <p>Empowering students to manage their money and reach financial independence.</p>
+                    </div>
+                    <img src={plant1} alt="Potted plant" />
                 </div>
-                <img src={plant1} alt="Potted plant" />
+
+                <div class="mission">
+                    <p>We are a tech-enabled nonprofit empowering students with the knowledge
+                        to manage their money and reach financial independence</p>
+                </div>
             </div>
 
-            <div class="mission">
-                <p>We are a tech-enabled nonprofit empowering students with the knowledge
-                    to manage their money and reach financial independence</p>
-            </div>
-
-            <h2><u>Our Impact</u></h2>
-            <div class="impact-container">
-                <Impact number="20" text="Members" />
-                <Impact number="30" text="Chapters" />
-                <Impact number="40" text="Students Taught" />
-            </div>
-            <div class="footnote-container">
-                <p>*Learn more about our purpose and impact <a href="/about"><u>here</u></a></p>
-            </div>
-
-            <h2><u>Our Partners</u></h2>
-            <div class="carousel-container">
-                <a class="arrow" onclick="plusSlides(-1)">&lt;</a>
+            <div class="desktop-2">
+                <h2><u>Our Impact</u></h2>
                 <div class="impact-container">
-                    <Partner text="Spark" />
-                    <Partner text="Google" />
-                    <Partner text="FB" />
+                    <Impact number="20" text="Members" />
+                    <Impact number="30" text="Chapters" />
+                    <Impact number="40" text="Students Taught" />
                 </div>
-                <a class="arrow" onclick="plusSlides(1)">&gt;</a>
+                <div class="footnote-container">
+                    <p>*Learn more about our purpose and impact <a href="/about"><u>here</u></a></p>
+                </div>
+
+                <h2><u>Our Partners</u></h2>
+                <div class="carousel-container">
+                    <a class="arrow" onclick="plusSlides(-1)">&lt;</a>
+                    <div class="impact-container">
+                        <Partner text="Spark" />
+                        <Partner text="Google" />
+                        <Partner text="FB" />
+                    </div>
+                    <a class="arrow" onclick="plusSlides(1)">&gt;</a>
+                </div>
+            </div>
+
+            <div class="desktop-3">
+                <p>Something about us being a non-profit</p>
             </div>
         </div>
     );

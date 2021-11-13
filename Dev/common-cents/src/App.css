@@ -98,8 +98,16 @@ input:focus {
 
 /* Homepage */
 
-.home-container {
+.desktop-1 {
+    background-color: #B7DFFA;
+}
+
+.desktop-2 {
     background-image: linear-gradient(#B7DFFA, white);
+}
+
+.desktop-3 {
+    background-image: white;
 }
 
 .home-container h1 {
