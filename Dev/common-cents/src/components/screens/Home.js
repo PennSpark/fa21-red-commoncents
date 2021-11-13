@@ -1,15 +1,24 @@
 import React, { useEffect, useState, useContext } from "react";
 import { userContext } from "../../App";
+import plant1 from "./plant1.svg";
 
 const Home = () => {
     return (
         <div class="home-container">
-            <h1>Common Cents</h1>
-            <p>Financial freedom</p>
+            <div class="intro-container">
+                <div class="greeting-container">
+                    <h1>Common Cents</h1>
+                    <p>Financial freedom within the reach of every student</p>
+                    <p>Empowering students to manage their money and reach financial independence.</p>
+                </div>
+                <img src={plant1} alt="Potted plant" />
+            </div>
+
             <div class="mission">
                 <p>We are a tech-enabled nonprofit empowering students with the knowledge
                     to manage their money and reach financial independence</p>
             </div>
+
             <h2><u>Our Impact</u></h2>
             <div class="impact-container">
                 <Impact number="20" text="Members" />
@@ -17,7 +26,7 @@ const Home = () => {
                 <Impact number="40" text="Students Taught" />
             </div>
             <div class="footnote-container">
-                <p>*Learn more about our purpose and impact <a href="#"><u>here</u></a></p>
+                <p>*Learn more about our purpose and impact <a href="/about"><u>here</u></a></p>
             </div>
 
             <h2><u>Our Partners</u></h2>
