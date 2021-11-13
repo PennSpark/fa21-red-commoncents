@@ -1,91 +1,179 @@
 body {
-  font-family: "Roboto", sans-serif;
-  background-color: #ffffff;
+    font-family: "inter", sans-serif;
+    background-color: #ffffff;
 }
 
 .nav-wrapper {
-  background-color: #b7dffa;
+    background-color: #b7dffa;
 }
 
 .btn {
-  background-color: #2b87ba !important;
-  width: fit-content;
+    background-color: #2b87ba !important;
+    width: fit-content;
 }
 
 #toast-container {
-  top: 30px !important;
-  right: 20px !important;
-  left: auto !important;
+    top: 30px !important;
+    right: 20px !important;
+    left: auto !important;
 }
 
 .text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
+
 h4 {
-  width: 75%;
-  padding-left: 25%;
-  align-items: center;
+    width: 75%;
+    padding-left: 25%;
+    align-items: center;
 }
+
 .tab-group {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-align: center;
-  height: 50px;
-  margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    height: 50px;
+    margin-top: 70px;
 }
+
 .sign-in-tab {
-  background-color: #ffffff;
-  width: 100%;
-  justify-content: center;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  border-top-right-radius: 5px;
+    background-color: #ffffff;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 5px;
 }
+
 .create-account-tab {
-  background-color: #ffffff;
-  width: 100%;
-  justify-content: center;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  border-top-left-radius: 5px;
+    background-color: #ffffff;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 5px;
 }
+
 .input-area {
-  background-color: #b7dffa;
-  display: flex;
-  flex-direction: column;
-  padding: 50px;
-  align-items: center;
+    background-color: #b7dffa;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: center;
 }
+
 input {
-  background-color: #ffffff !important;
-  width: 400px !important;
-  border-bottom: none !important;
-  box-shadow: none !important;
-  border-radius: 5px !important;
-  padding-left: 10px !important;
+    background-color: #ffffff !important;
+    width: 400px !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    border-radius: 5px !important;
+    padding-left: 10px !important;
 }
 
 input:focus {
-  border-bottom: none !important;
-  box-shadow: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
 }
 
 .row {
-  width: 100%;
-  display: flex;
-  padding-left: 120px;
-  flex-direction: row;
-  justify-content: space-evenly;
+    width: 100%;
+    display: flex;
+    padding-left: 120px;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .footer-wrapper {
-  background-color: #e5f8e2;
-  display: flex;
-  height: 200px;
+    background-color: #e5f8e2;
+    display: flex;
+    height: 200px;
+}
+
+
+/* Homepage */
+
+.home-container h2 {
+    text-align: center;
+}
+
+.mission {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 25px;
+    border: 1px solid black;
+    height: 200px;
+    width: 90%;
+    background-color: #E5F8E2;
+    margin: auto;
+}
+
+.mission p {
+    text-align: center;
+    margin: auto;
+    width: 800px;
+    font-size: 36px;
+}
+
+.footnote-container {
+    padding-left: 50px;
+}
+
+.impact-container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 1000px;
+}
+
+.impact-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 25px;
+    border: 1px solid black;
+    height: 200px;
+    width: 300px;
+}
+
+.impact-box p.number {
+    text-align: center;
+    font-size: 40px;
+}
+
+.impact-box p.text {
+    text-align: center;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.carousel-container a.arrow {
+    margin: auto;
+    font-size: 50px;
+    color: black;
+}
+
+.partner-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 25px;
+    border: 1px solid black;
+    height: 200px;
+    width: 300px;
+    background-color: #E5F8E2;
+}
+
+.partner-box p.text {
+    text-align: center;
 }
