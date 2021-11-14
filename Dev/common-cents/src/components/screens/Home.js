@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useContext } from "react";
 import { userContext } from "../../App";
-import plant1 from "./plant1.svg";
 import plant1 from "../images/plant1.svg";
 
 const Home = () => {
@@ -132,11 +131,11 @@ function SlideShow(n) {
 }
 */
 
+
 // Images controls
 function currentSlide(n) {
     SlideShow(slidePosition = n);
 }
-
 function SlideShow(n) {
     var i;
     var slides = document.getElementsByClassName("Containers");
