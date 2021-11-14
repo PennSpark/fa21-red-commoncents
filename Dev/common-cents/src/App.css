@@ -99,6 +99,7 @@ input:focus {
 /* Homepage */
 
 .desktop-1 {
+<<<<<<< HEAD
   background-color: #b7dffa;
 }
 
@@ -112,6 +113,21 @@ input:focus {
 
 .home-container h1 {
   font-size: 102px;
+=======
+    background-color: #B7DFFA;
+}
+
+.desktop-2 {
+    background-image: linear-gradient(#B7DFFA, white);
+}
+
+.desktop-3 {
+    background-image: white;
+}
+
+.home-container h1 {
+    font-size: 102px;
+>>>>>>> c9ffcd39a58d5353a83c5bb7994ed5c2d66d452f
 }
 
 .home-container h2 {
@@ -120,6 +136,7 @@ input:focus {
 }
 
 .home-container p {
+<<<<<<< HEAD
   font-size: 30px;
 }
 
@@ -130,6 +147,18 @@ input:focus {
 .greeting-container {
   margin-left: 50px;
   width: 55%;
+=======
+    font-size: 30px;
+}
+
+.intro-container {
+    display: flex;
+}
+
+.greeting-container {
+    margin-left: 50px;
+    width: 55%;
+>>>>>>> c9ffcd39a58d5353a83c5bb7994ed5c2d66d452f
 }
 
 .mission {
