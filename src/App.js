@@ -12,7 +12,6 @@ import About from './components/screens/About'
 import Video from './components/Video'
 
 import Quiz from './Quiz'
-
 import {reducer, initialState} from './reducers/userReducer'
 
 export const userContext = createContext()
@@ -41,7 +40,6 @@ const Routing = () => {
         <Route path="/quiz" element={<Quiz/>} />
 
         <Route path="/video" element={<Video videoID = "U1XogcoB6uw" coinReward = "20"/>} />
-
     </Routes>
   )
 }
