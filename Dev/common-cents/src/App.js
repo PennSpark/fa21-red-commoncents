@@ -6,6 +6,7 @@ import {BrowserRouter, Switch, Route, Routes, useNavigate} from 'react-router-do
 import Signin from './components/screens/Signin'
 import Home from './components/screens/Home'
 import Profile from './components/screens/Profile'
+import About from './components/screens/About'
 import {reducer, initialState} from './reducers/userReducer'
 
 export const userContext = createContext()
@@ -28,6 +29,7 @@ const Routing = () => {
         <Route path="/home" element={<Home/>} />
         <Route path="/signin" element={<Signin/>} />
         <Route path="/profile" element={<Profile/>} />
+        <Route path="/about" element={<About/>} />
     </Routes>
   )
 }
