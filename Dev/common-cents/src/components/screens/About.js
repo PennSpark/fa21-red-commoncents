@@ -3,8 +3,12 @@ import { userContext } from '../../App'
 
 const About = () => {
     return (
-        <div >
-            <h1>About</h1>
+        <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+        }}>
+            <h1>Our Purpose</h1>
         </div>
     )
 }
