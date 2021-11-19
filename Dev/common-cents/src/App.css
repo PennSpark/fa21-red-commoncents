@@ -257,6 +257,10 @@ input:focus {
 }
 
 .purpose-how1 {
+  margin-left: 100px;
+}
+
+.lower-container {
   display: flex;
   justify-content: center;  
   align-items: center;
@@ -268,7 +272,8 @@ input:focus {
   margin: auto;
 }
 
-.purpose-how1 p {
+.lower-container p {
+  width: 300px;
   text-align: center;
   margin: auto;
   font-size: 36px;
