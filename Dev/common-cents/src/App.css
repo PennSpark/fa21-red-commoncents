@@ -223,14 +223,18 @@ input:focus {
   background-color: #2b87ba;
 }
 
-.sub-info-container {
+.upper-container {
+  margin-left: 100px;
+}
+
+.lower-container {
   display: flex;
   flex-flow: column wrap;
   align-content: flex-end;
   justify-content: flex-end;
 }
 
-.sub-info-container p {
+.lower-container p {
   width: 300px;
   text-align: center;
 }

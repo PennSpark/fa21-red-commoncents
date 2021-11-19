@@ -45,9 +45,11 @@ const Home = () => {
             </div>
 
             <div class="desktop-3">
+                <div class="upper-container">
                 <p>Something about us being a non-profit</p>
                 <button>DONATE TODAY</button>
-                <div class="sub-info-container">
+                </div>
+                <div class="lower-container">
                     <p>Subscribe to our Newsletter</p>
                     <SubInput input_type="email" text="Email" />
                     <div class="align-submit">
