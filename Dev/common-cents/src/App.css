@@ -238,10 +238,9 @@ input:focus {
 .align-submit {
   display: flex;
   justify-content: flex-end;
-  gap: 400px;
+  gap: 200px;
 }
 
 .info-input {
-  width: 0px;
-  border-radius: 20px;
+  width: 300px;
 }
