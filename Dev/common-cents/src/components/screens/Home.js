@@ -46,6 +46,15 @@ const Home = () => {
 
             <div class="desktop-3">
                 <p>Something about us being a non-profit</p>
+                <button>DONATE TODAY</button>
+                <div class="sub-info-container">
+                    <p>Subscribe to our Newsletter</p>
+                    <SubInput input_type="email" text="Email" />
+                    <div class="align-submit">
+                        <SubInput input_type="text" text="Grad Year" />
+                        <SubInput input_type="text" text="School" />
+                    </div>
+                </div>
             </div>
         </div>
     );
@@ -67,6 +76,16 @@ function Partner(props) {
     return (
         <div class="partner-box">
             <p class="text"> {text} </p>
+        </div>
+    );
+}
+
+function SubInput(props) {
+    const input_type = props.input_type;
+    const text = props.text;
+    return (
+        <div class="info-input">
+            <input type={input_type} class="form-control" placeholder={text} />
         </div>
     );
 }
