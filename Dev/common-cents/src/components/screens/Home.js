@@ -46,8 +46,8 @@ const Home = () => {
 
             <div class="desktop-3">
                 <div class="upper-container">
-                <p>Something about us being a non-profit</p>
-                <button>DONATE TODAY</button>
+                    <p>Something about us being a non-profit</p>
+                    <button>DONATE TODAY</button>
                 </div>
                 <div class="lower-container">
                     <p>Subscribe to our Newsletter</p>
