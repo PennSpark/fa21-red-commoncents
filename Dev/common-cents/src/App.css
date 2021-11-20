@@ -212,3 +212,81 @@ input:focus {
 .partner-box p.text {
   text-align: center;
 }
+
+/* About */
+
+.our-purpose {
+  text-align: center;
+}
+
+.our-purpose p {
+  margin-top: 0px;
+  font-size: 50px;
+}
+
+.desktop-11 {
+  background-color: #B7DFFA;
+}
+
+.purpose-how1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background-color: #e5f8e2;
+  height: 132px;
+  width: 80%;
+  flex-direction: column;
+  margin: auto;
+}
+
+.purpose-how1 p {
+  text-align: center;
+  margin: auto;
+  font-size: 36px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.purpose-how2 {
+  margin-top: 75px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 30px;
+  background-color: #e5f8e2;
+  height: 245px;
+  width: 60%;
+  flex-direction: row;
+}
+
+.purpose-how2 p {
+  text-align: center;
+  margin: auto;
+  font-size: 36px;
+}
+
+.purpose-how2-image {
+  margin-top: 75px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 30px;
+  background-color: #e5f8e2;
+  height: 245px;
+  width: 30%;
+  flex-direction: row;
+}
+
+.purpose-how2-image p {
+  text-align: center;
+  margin: auto;
+  font-size: 36px;
+}
+
