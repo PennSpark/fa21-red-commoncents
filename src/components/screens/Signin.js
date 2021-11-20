@@ -110,7 +110,7 @@ const Signin = () => {
         }
     }
     const Signup = () => {
-        const url = "https://murmuring-waters-58495.herokuapp.com/users/signup"
+        const url = "https://young-savannah-91729.herokuapp.com/users/signup"
         const credentials = {
             username: username,
             password: password,
@@ -137,7 +137,7 @@ const Signin = () => {
         });
     };
     const Signin = () => {
-        const url = "https://murmuring-waters-58495.herokuapp.com/users/signin"
+        const url = "https://young-savannah-91729.herokuapp.com/users/signin"
         const credentials = {
             username: username,
             password: password
