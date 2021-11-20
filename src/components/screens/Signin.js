@@ -17,7 +17,6 @@ const Signin = () => {
     const [major, setMajor] = useState("")
     const [gradYear, setGradYear] = useState("")
     const renderList = () => {
-        console.log(mode);
         if (mode) {
             return [
                 <div class = "input-area">

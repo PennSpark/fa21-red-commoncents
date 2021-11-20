@@ -16,14 +16,6 @@ const NavBar = () => {
                     <li><Link to="/start">START</Link></li>
                     <li><Link to="/chapters">CHAPTERS</Link></li>
                     <li><Link to="/profile"><i className="material-icons">person_outline</i></Link></li>
-                    <li>
-                        <button className="btn"
-                            onClick = {() => {
-                                navigate('../')
-                            }}>
-                        DONATE
-                        </button>
-                    </li>
                 </ul>
             </div>
         </nav>

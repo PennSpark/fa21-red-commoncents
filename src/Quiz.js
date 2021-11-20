@@ -1,7 +1,7 @@
-import react, { useState } from 'react';
-import { withTheme } from 'styled-components';
+import React, { useState } from 'react';
+import './App.css'
 
-function Quiz() {
+const Quiz = () => {
 
     const boardStyle = {
         // position: 'absolute',
@@ -187,7 +187,7 @@ function Quiz() {
 
     return(
         <div style = {overallStyle}>
-            <button style = {leftButtonStyle} onClick={() => handlePrevOptionClick()}>
+            <button class = "leftButton" onClick={() => handlePrevOptionClick()}>
                 &lt;
             </button>
             <div style = {boardStyle}>

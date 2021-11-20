@@ -6,6 +6,7 @@ import {BrowserRouter, Route, Routes, useNavigate} from 'react-router-dom'
 import Signin from './components/screens/Signin'
 import Home from './components/screens/Home'
 import Profile from './components/screens/Profile'
+import Video from './components/Video'
 import Quiz from './Quiz'
 import {reducer, initialState} from './reducers/userReducer'
 
@@ -27,6 +28,7 @@ const Routing = () => {
   return (
     <Routes>
         <Route path="/home" element={<Home/>} />
+        <Route path="/video" element={<Video videoID = "U1XogcoB6uw" coinReward = "20"/>} />
         <Route path="/signin" element={<Signin/>} />
         <Route path="/profile" element={<Profile/>} />
         <Route path="/quiz" element={<Quiz/>} />
