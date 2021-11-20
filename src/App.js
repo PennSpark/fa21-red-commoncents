@@ -6,11 +6,13 @@ import {BrowserRouter, Route, Routes, useNavigate} from 'react-router-dom'
 import Signin from './components/screens/Signin'
 import Home from './components/screens/Home'
 import Profile from './components/screens/Profile'
-<<<<<<< HEAD
+
 import About from './components/screens/About'
-=======
+
+import Video from './components/Video'
+
 import Quiz from './Quiz'
->>>>>>> 806d489f (something)
+
 import {reducer, initialState} from './reducers/userReducer'
 
 export const userContext = createContext()
@@ -33,11 +35,13 @@ const Routing = () => {
         <Route path="/home" element={<Home/>} />
         <Route path="/signin" element={<Signin/>} />
         <Route path="/profile" element={<Profile/>} />
-<<<<<<< HEAD
+
         <Route path="/about" element={<About/>} />
-=======
+
         <Route path="/quiz" element={<Quiz/>} />
->>>>>>> 806d489f (something)
+
+        <Route path="/video" element={<Video videoID = "U1XogcoB6uw" coinReward = "20"/>} />
+
     </Routes>
   )
 }
