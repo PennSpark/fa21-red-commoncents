@@ -67,7 +67,7 @@ router.route('/changeCoins').post((req, res) => {
       .then(user => {
         user.coins += req.body.coins
         user.save()
-          .then(() => res.json({message: `Rewarded ${req.body.coins} coins!`}))
+          .then(() => res.json({message: `You earned ${req.body.coins} coins!`}))
           .catch(err => res.status(400).json('Error: ' + err));
     })
     .catch(err => res.status(400).json('Error: ' + err));
