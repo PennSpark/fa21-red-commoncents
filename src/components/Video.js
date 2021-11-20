@@ -19,7 +19,7 @@ const Video = ({videoID, coinReward}) => {
         const currentTime = e.target.getCurrentTime();
         if (currentTime / duration > 0.9) {
             const user = JSON.parse(localStorage.getItem("user"));
-            const url = "https://murmuring-waters-58495.herokuapp.com/users/changeCoins"
+            const url = "https://young-savannah-91729.herokuapp.com/users/changeCoins"
             axios
             .post(url, {id: user._id, coins: parseInt(coinReward)})
             .then((response) => {
