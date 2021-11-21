@@ -107,7 +107,8 @@ input:focus {
 }
 
 .desktop-3 {
-  background-color: #b7dffa;
+  background-color: #013A6B;
+  background-image: -webkit-linear-gradient(120deg, #b7dffa 50%, white 50%);
 }
 
 .home-container h1 {
