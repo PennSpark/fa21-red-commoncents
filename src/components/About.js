@@ -37,6 +37,11 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            <div class = "desktop-12">
+            <div class = "our-impact">
+                    <h1>Let's Talk About Impact</h1>
+                </div>
+            </div>
         </div>    
     )
 }

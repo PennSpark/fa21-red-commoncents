@@ -306,7 +306,49 @@ input:focus {
   padding-left: 20px !important;
 }
 
-.flex-container1 {
+.desktop3 input,
+input::-webkit-input-placeholder {
+  font-size: 30px;
+}
+/* About */
+
+.our-purpose {
+  text-align: center;
+}
+
+.our-purpose p {
+  margin-top: 0px;
+  font-size: 50px;
+}
+
+.our-purpose h1 {
+  margin-top: 0px;
+  padding-top: 75px;
+}
+
+.desktop-11 {
+  background-color: #B7DFFA;
+}
+
+.purpose-how1 {
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  border-radius: 30px;
+  background-color: #e5f8e2;
+  height: 132px;
+  width: 80%;
+  flex-direction: column;
+  margin: auto;
+}
+
+.purpose-how1 p {
+  text-align: center;
+  margin: auto;
+  font-size: 36px;
+}
+
+.flex-container {
   display: flex;
   flex-direction: row;
   margin-left: 10%;
