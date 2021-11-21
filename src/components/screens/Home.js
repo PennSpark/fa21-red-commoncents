@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext } from "react";
 import { userContext } from "../../App";
-import plant1 from "../images/plant1.svg";
+import plant from "../images/sprouting-tree.b4284abd.png";
 
 const Home = () => {
     return (
@@ -12,7 +12,7 @@ const Home = () => {
                         <p>Financial freedom within the reach of every student</p>
                         <p>Empowering students to manage their money and reach financial independence.</p>
                     </div>
-                    <img src={plant1} alt="Potted plant" />
+                    <img src={plant} alt="Potted plant" />
                 </div>
 
                 <div class="mission">
