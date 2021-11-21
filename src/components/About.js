@@ -1,5 +1,6 @@
 import React, {useEffect, useState, useContext} from 'react'
 import { userContext } from '../App'
+import speechbubble from "./speechbubble.png"
 
 const About = () => {
     return (
@@ -38,8 +39,40 @@ const About = () => {
                 </div>
             </div>
             <div class = "desktop-12">
-            <div class = "our-impact">
+                <div class = "our-impact">
                     <h1>Let's Talk About Impact</h1>
+                </div>
+                <div class = "flex-container1">
+                    <div class = "speech-bubble">
+                        <img src = {speechbubble} alt = "speechbubble" />
+                    </div>
+                    <div class = "person">
+
+                    </div>
+                </div>
+                <div class = "flex-container1">
+                    <div class = "person">
+                        
+                    </div>
+                    <div class = "speech-bubble1">
+                        <img src = {speechbubble} alt = "speechbubble" />
+                    </div>
+                </div>
+                <div class = "flex-container1">
+                    <div class = "speech-bubble">
+                        <img src = {speechbubble} alt = "speechbubble" />
+                    </div>
+                    <div class = "person">
+
+                    </div>
+                </div>
+                <div class = "flex-container1">
+                    <div class = "person">
+                        
+                    </div>
+                    <div class = "speech-bubble1">
+                        <img src = {speechbubble} alt = "speechbubble" />
+                    </div>
                 </div>
             </div>
         </div>    
