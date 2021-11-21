@@ -304,6 +304,7 @@ input:focus {
 
 .desktop-12 {
   background-color: #B7DFFA;
+  padding-bottom: 75px;
 }
 
 .our-impact {
@@ -341,4 +342,23 @@ input:focus {
   display: inline-block;
 }
 
+.desktop-15 {
+  background-color: #B7DFFA;
+}
+
+.awards-container{
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  background-color: white;
+  height: 410px;
+  width: 80%;
+  flex-direction: column;
+  margin: auto;
+}
+
+.our-awards h1{
+  text-align: center;
+  font-size: 50px;
+}
 

@@ -71,7 +71,14 @@ const About = () => {
                         
                     </div>
                     <div class = "speech-bubble1">
-                        <img src = {speechbubble} alt = "speechbubble" />
+                        <img src = {speechbubble} alt = "speech-bubble" />
+                    </div>
+                </div>
+            </div>
+            <div class = "desktop-15">
+                <div class = "awards-container">
+                    <div class = "our-awards">
+                        <h1>Our Awards</h1>
                     </div>
                 </div>
             </div>
