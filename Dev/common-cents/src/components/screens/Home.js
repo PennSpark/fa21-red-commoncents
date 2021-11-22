@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import { userContext } from "../../App";
 import plant1 from "./plant1.svg";
+import plant1 from "../images/plant1.svg";
 
 const Home = () => {
     return (
@@ -79,7 +80,57 @@ SlideShow(slidePosition);
 // Forward/Back controls
 function plusSlides(n) {
     SlideShow(slidePosition += n);
+        </div>
+    );
+};
+
+function Impact(props) {
+    const number = props.number;
+    const text = props.text;
+    return (
+        <div class="impact-box">
+            <p class="number"> {number} </p>
+            <p class="text"> {text} </p>
+        </div>
+    );
 }
+
+function Partner(props) {
+    const text = props.text;
+    return (
+        <div class="partner-box">
+            <p class="text"> {text} </p>
+        </div>
+    );
+}
+
+/*
+var slidePosition = 1;
+SlideShow(slidePosition);
+// Forward/Back controls
+function plusSlides(n) {
+    SlideShow(slidePosition += n);
+}
+// Images controls
+function currentSlide(n) {
+    SlideShow(slidePosition = n);
+}
+function SlideShow(n) {
+    var i;
+    var slides = document.getElementsByClassName("Containers");
+    var circles = document.getElementsByClassName("dots");
+    if (n > slides.length) { slidePosition = 1 }
+    if (n < 1) { slidePosition = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < circles.length; i++) {
+        circles[i].className = circles[i].className.replace(" enable", "");
+    }
+    slides[slidePosition - 1].style.display = "block";
+    circles[slidePosition - 1].className += " enable";
+}
+*/
 
 // Images controls
 function currentSlide(n) {
@@ -101,7 +152,5 @@ function SlideShow(n) {
     slides[slidePosition - 1].style.display = "block";
     circles[slidePosition - 1].className += " enable";
 }
-
-*/
 
 export default Home;

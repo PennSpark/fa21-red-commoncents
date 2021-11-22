@@ -112,6 +112,19 @@ input:focus {
 
 .home-container h1 {
     font-size: 102px;
+  background-color: #b7dffa;
+}
+
+.desktop-2 {
+  background-image: linear-gradient(#b7dffa, white);
+}
+
+.desktop-3 {
+  background-image: white;
+}
+
+.home-container h1 {
+  font-size: 102px;
 }
 
 .home-container h2 {
@@ -130,6 +143,16 @@ input:focus {
 .greeting-container {
     margin-left: 50px;
     width: 55%;
+  font-size: 30px;
+}
+
+.intro-container {
+  display: flex;
+}
+
+.greeting-container {
+  margin-left: 50px;
+  width: 55%;
 }
 
 .mission {
