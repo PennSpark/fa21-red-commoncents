@@ -99,19 +99,6 @@ input:focus {
 /* Homepage */
 
 .desktop-1 {
-    background-color: #B7DFFA;
-}
-
-.desktop-2 {
-    background-image: linear-gradient(#B7DFFA, white);
-}
-
-.desktop-3 {
-    background-image: white;
-}
-
-.home-container h1 {
-    font-size: 102px;
   background-color: #b7dffa;
 }
 
@@ -134,16 +121,6 @@ input:focus {
 }
 
 .home-container p {
-    font-size: 30px;
-}
-
-.intro-container {
-    display: flex;
-}
-
-.greeting-container {
-    margin-left: 50px;
-    width: 55%;
   font-size: 30px;
 }
 
@@ -237,55 +214,34 @@ input:focus {
   text-align: center;
 }
 
-/* About */
-
-.our-purpose {
+.desktop-3 button {
   text-align: center;
+  font-size: 40px;
+  color: white;
+  border-radius: 25px;
+  height: 100px;
+  width: 500px;
+  background-color: #2b87ba;
 }
 
-.our-purpose p {
-  margin-top: 0px;
-  font-size: 50px;
-}
-
-.our-purpose h1 {
-  margin-top: 0px;
-  padding-top: 75px;
-}
-
-.desktop-11 {
-  background-color: #B7DFFA;
-}
-
-.purpose-how1 {
+.upper-container {
   margin-left: 100px;
 }
 
 .lower-container {
   display: flex;
-  justify-content: center;  
-  align-items: center;
-  border-radius: 30px;
-  background-color: #e5f8e2;
-  height: 132px;
-  width: 80%;
-  flex-direction: column;
-  margin: auto;
+  flex-flow: column wrap;
+  align-content: flex-end;
+  justify-content: flex-end;
 }
 
 .lower-container p {
   width: 300px;
   text-align: center;
-  margin: auto;
-  font-size: 36px;
 }
 
-.flex-container {
+.align-submit {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-left: 10%;
-  margin-right: 10%;
   justify-content: flex-end;
   gap: 50px;
 }
@@ -310,151 +266,3 @@ input:focus {
 input::-webkit-input-placeholder {
   font-size: 30px;
 }
-/* About */
-
-.our-purpose {
-  text-align: center;
-}
-
-.our-purpose p {
-  margin-top: 0px;
-  font-size: 50px;
-}
-
-.our-purpose h1 {
-  margin-top: 0px;
-  padding-top: 75px;
-}
-
-.desktop-11 {
-  background-color: #B7DFFA;
-}
-
-.purpose-how1 {
-  display: flex;
-  justify-content: center;  
-  align-items: center;
-  border-radius: 30px;
-  background-color: #e5f8e2;
-  height: 132px;
-  width: 80%;
-  flex-direction: column;
-  margin: auto;
-}
-
-.purpose-how1 p {
-  text-align: center;
-  margin: auto;
-  font-size: 36px;
-}
-
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.flex-container1 {
-  display: flex;
-  flex-direction: row;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.purpose-how2 {
-  margin-top: 75px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  border-radius: 30px;
-  background-color: #e5f8e2;
-  height: 245px;
-  width: 60%;
-  flex-direction: row;
-}
-
-.purpose-how2 p {
-  text-align: center;
-  margin: auto;
-  font-size: 36px;
-}
-
-.purpose-how2-image {
-  margin-top: 75px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  border-radius: 30px;
-  background-color: #e5f8e2;
-  height: 245px;
-  width: 30%;
-  flex-direction: row;
-}
-
-.purpose-how2-image p {
-  text-align: center;
-  margin: auto;
-  font-size: 36px;
-}
-
-.desktop-12 {
-  background-color: #B7DFFA;
-  padding-bottom: 75px;
-}
-
-.our-impact {
-  text-align: center;
-}
-
-.our-impact h1 {
-  margin-top: 0px;
-  padding-top: 75px;
-  padding-bottom: 75px;
-}
-
-.speech-bubble {
-  margin-left: 30%;
-  margin-top: 0px;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-} 
-
-.speech-bubble1 {
-  margin-top: 0px;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-  transform: scaleX(-1);
-} 
-
-.person {
-  margin-top: 250px;
-  height: 220px;
-  width: 220px;
-  background-color: #C4C4C4;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.desktop-15 {
-  background-color: #B7DFFA;
-}
-
-.awards-container{
-  display: flex;
-  align-items: center;
-  border-radius: 30px;
-  background-color: white;
-  height: 410px;
-  width: 80%;
-  flex-direction: column;
-  margin: auto;
-}
-
-.our-awards h1{
-  text-align: center;
-  font-size: 50px;
-}
-

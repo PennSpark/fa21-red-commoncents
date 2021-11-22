@@ -92,11 +92,11 @@ function SubInput(props) {
     );
 }
 
-/*
 
+
+/*
 var slidePosition = 1;
 SlideShow(slidePosition);
-
 // Forward/Back controls
 function plusSlides(n) {
     SlideShow(slidePosition += n);
