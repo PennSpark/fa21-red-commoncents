@@ -37,6 +37,14 @@
   .flex-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .flex-container1 {
+    display: flex;
+    flex-direction: row;
     margin-left: 10%;
     margin-right: 10%;
   }
