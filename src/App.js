@@ -2,15 +2,13 @@ import React, {useEffect, createContext, useReducer, useContext, useState} from 
 import NavBar from './components/Navbar'
 import Footer from './components/Footer'
 import './App.css'
+import './About.css'
 import {BrowserRouter, Route, Routes, useNavigate} from 'react-router-dom'
 import Signin from './components/screens/Signin'
 import Home from './components/screens/Home'
 import Profile from './components/screens/Profile'
-
 import About from './components/screens/About'
-
 import Video from './components/Video'
-
 import Quiz from './Quiz'
 import {reducer, initialState} from './reducers/userReducer'
 

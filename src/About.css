@@ -1,0 +1,138 @@
+.our-purpose {
+    text-align: center;
+  }
+  
+  .our-purpose p {
+    margin-top: 0px;
+    font-size: 50px;
+  }
+  
+  .our-purpose h1 {
+    margin-top: 0px;
+    padding-top: 75px;
+  }
+  
+  .desktop-11 {
+    background-color: #B7DFFA;
+  }
+  
+  .purpose-how1 {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    border-radius: 30px;
+    background-color: #e5f8e2;
+    height: 132px;
+    width: 80%;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+  .purpose-how1 p {
+    text-align: center;
+    margin: auto;
+    font-size: 36px;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .purpose-how2 {
+    margin-top: 75px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #e5f8e2;
+    height: 245px;
+    width: 60%;
+    flex-direction: row;
+  }
+  
+  .purpose-how2 p {
+    text-align: center;
+    margin: auto;
+    font-size: 36px;
+  }
+  
+  .purpose-how2-image {
+    margin-top: 75px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #e5f8e2;
+    height: 245px;
+    width: 30%;
+    flex-direction: row;
+  }
+  
+  .purpose-how2-image p {
+    text-align: center;
+    margin: auto;
+    font-size: 36px;
+  }
+  
+  .desktop-12 {
+    background-color: #B7DFFA;
+    padding-bottom: 75px;
+  }
+  
+  .our-impact {
+    text-align: center;
+  }
+  
+  .our-impact h1 {
+    margin-top: 0px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  
+  .speech-bubble {
+    margin-left: 30%;
+    margin-top: 0px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+  } 
+  
+  .speech-bubble1 {
+    margin-top: 0px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    transform: scaleX(-1);
+  } 
+  
+  .person {
+    margin-top: 250px;
+    height: 220px;
+    width: 220px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .desktop-15 {
+    background-color: #B7DFFA;
+  }
+  
+  .awards-container{
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    background-color: white;
+    height: 410px;
+    width: 80%;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+  .our-awards h1{
+    text-align: center;
+    font-size: 50px;
+  }
