@@ -1,6 +1,8 @@
 import React, {useEffect, useState, useContext} from 'react'
 import { userContext } from '../../App'
 import speechbubble from "./speechbubble.png"
+import campuschapters from "../images/campus-chapters.jpg";
+import studentevents from "../images/student-events.png";
 
 const About = () => {
     return (
@@ -18,7 +20,7 @@ const About = () => {
                         <p>Campus Chapters</p>
                     </div>
                     <div class = "purpose-how2-image">
-                        <p>Placeholder</p>
+                        <img src = {campuschapters} alt = "campuschapters" />
                     </div>
                 </div>
                 <div class = "flex-container">
@@ -34,7 +36,7 @@ const About = () => {
                         <p>User-Centric Resources</p>
                     </div>
                     <div class = "purpose-how2-image">
-                        <p>Placeholder</p>
+                    <img src = {studentevents} alt = "studentevents" />
                     </div>
                 </div>
             </div>

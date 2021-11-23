@@ -67,22 +67,10 @@
     font-size: 36px;
   }
   
-  .purpose-how2-image {
+  .purpose-how2-image img {
     margin-top: 75px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 30px;
-    background-color: #e5f8e2;
-    height: 245px;
-    width: 30%;
-    flex-direction: row;
-  }
-  
-  .purpose-how2-image p {
-    text-align: center;
-    margin: auto;
-    font-size: 36px;
+    max-height: 245px;
+    width: 100%;
   }
   
   .desktop-12 {
