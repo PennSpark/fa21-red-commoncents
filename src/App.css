@@ -104,11 +104,13 @@ input:focus {
 
 .desktop-2 {
   background-image: linear-gradient(#b7dffa, white);
+  margin-bottom: 200px;
 }
 
 .desktop-3 {
   background-color: #013a6b;
-  background-image: -webkit-linear-gradient(120deg, #b7dffa 50%, white 50%);
+  background-image: -webkit-linear-gradient(111deg, #b7dffa 50%, white 50%);
+  height: 750px;
 }
 
 .home-container h1 {
@@ -129,6 +131,7 @@ input:focus {
 }
 
 .greeting-container {
+  margin-top: 200px;
   margin-left: 50px;
   width: 55%;
 }
@@ -222,6 +225,7 @@ input:focus {
   height: 100px;
   width: 500px;
   background-color: #2b87ba;
+  margin-top: 40px;
 }
 
 .upper-container {
