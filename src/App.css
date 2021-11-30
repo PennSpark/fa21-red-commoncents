@@ -107,7 +107,7 @@ input:focus {
 }
 
 .desktop-3 {
-  background-color: #013A6B;
+  background-color: #013a6b;
   background-image: -webkit-linear-gradient(120deg, #b7dffa 50%, white 50%);
 }
 
@@ -228,6 +228,11 @@ input:focus {
   margin-left: 100px;
 }
 
+.upper-container p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .lower-container {
   display: flex;
   flex-flow: column wrap;
@@ -240,10 +245,24 @@ input:focus {
   text-align: center;
 }
 
-.align-submit {
+.upper-submit-container {
+  display: flex;
+  margin-left: auto;
+  margin-right: 100px;
+}
+
+.middle-submit-container {
+  display: flex;
+  margin-left: auto;
+  margin-right: 100px;
+  margin-bottom: 20px;
+}
+
+.lower-submit-container {
   display: flex;
   justify-content: flex-end;
-  gap: 50px;
+  gap: 30px;
+  margin-right: 100px;
 }
 
 .desktop-3 input {
@@ -265,4 +284,16 @@ input:focus {
 .desktop3 input,
 input::-webkit-input-placeholder {
   font-size: 30px;
+}
+
+#email {
+  width: 540px !important;
+}
+
+#grad-year {
+  width: 300px !important;
+}
+
+#school {
+  width: 400px !important;
 }

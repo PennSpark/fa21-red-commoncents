@@ -47,14 +47,20 @@ const Home = () => {
             <div class="desktop-3">
                 <div class="upper-container">
                     <p>Something about us being a non-profit</p>
+                    <p>and how being a partner will help us</p>
+                    <p>achieve our mission</p>
                     <button>DONATE TODAY</button>
                 </div>
                 <div class="lower-container">
-                    <p>Subscribe to our Newsletter</p>
-                    <SubInput input_type="email" text="Email" />
-                    <div class="align-submit">
-                        <SubInput input_type="text" text="Grad Year" />
-                        <SubInput input_type="text" text="School" />
+                    <div class="upper-submit-container">
+                        <p>Subscribe to our Newsletter</p>
+                    </div>
+                    <div class="middle-submit-container">
+                        <SubInput input_type="email" id="email" text="Email" />
+                    </div>
+                    <div class="lower-submit-container">
+                        <SubInput input_type="text" id="grad-year" text="Grad Year" />
+                        <SubInput input_type="text" id="school" text="School" />
                     </div>
                 </div>
             </div>
@@ -84,10 +90,11 @@ function Partner(props) {
 
 function SubInput(props) {
     const input_type = props.input_type;
+    const id = props.id;
     const text = props.text;
     return (
         <div class="info-input">
-            <input type={input_type} class="form-control" placeholder={text} />
+            <input type={input_type} id={id} class="form-control" placeholder={text} />
         </div>
     );
 }
