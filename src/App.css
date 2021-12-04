@@ -41,7 +41,7 @@ h4 {
 }
 
 .sign-in-tab {
-  background-color: #ffffff;
+  background-image: #ffffff;
   width: 100%;
   justify-content: center;
   text-align: center;
@@ -61,11 +61,12 @@ h4 {
 }
 
 .input-area {
-  background-color: #b7dffa;
+  background-image: linear-gradient(#b7dffa, #e5f8e2);
   display: flex;
   flex-direction: column;
   padding: 50px;
   align-items: center;
+  min-height: 200px;
 }
 
 input {
