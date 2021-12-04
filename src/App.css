@@ -314,3 +314,13 @@ input::-webkit-input-placeholder {
 #school {
   width: 400px !important;
 }
+
+.video-container {
+  margin-top: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 100px;
+  display: "flex";
+  flex-direction: "row";
+  justify-content: "center";
+}

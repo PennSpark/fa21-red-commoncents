@@ -31,8 +31,9 @@ const Video = ({videoID, coinReward}) => {
         }
     };
     return (
-        <div>
+        <div className = "video-container">
             <YouTube
+                className = "video"
                 videoId={videoID}
                 containerClassName="embed embed-youtube"
                 onStateChange={(e) => checkElapsedTime(e)}

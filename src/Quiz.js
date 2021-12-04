@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import { withTheme } from 'styled-components';
+import {useNavigate} from 'react-router-dom'
+import axios from 'axios';
+import M from 'materialize-css'
 
 function Quiz() {
 
+    const navigate = useNavigate()
+
     const boardStyle = {
-        // position: 'absolute',
         width: 1167,
         height: 487,
-        // marginLeft: 136,
-        marginTop: 100,
-
         backgroundColor: '#B7DFFA',
         borderRadius: 30
     }
@@ -84,36 +84,12 @@ function Quiz() {
         fontSize: 20,
     }
 
-    const leftButtonStyle = {
-        position: "relative",
-        top: 320,
-        left: 25,
-        width: 70,
-        height: 70,
-        fontWeight: 500,
-        fontSize: 60,
-        backgroundColor: 'white',
-        border: "none"
-    }
-
-    const rightButtonStyle = {
-        position: "relative",
-        top: 320,
-        right: 25,
-        width: 70,
-        height: 70,
-        fontWeight: 500,
-        fontSize: 60,
-        backgroundColor: 'white',
-        border: "none"
-    }
-
     const overallStyle = {
+        marginTop: 100,
         display: 'flex',
         flexDirection: 'row',
-        justifyContent: 'space-between'
+        justifyContent: 'center'
     }
-
 
     const questions = [
 		{
@@ -152,9 +128,16 @@ function Quiz() {
 				{ answerText: '4', isCorrect: true },
 			],
 		},
+        {
+			questionText: 'What is 5?',
+			answerOptions: [
+				{ answerText: '5', isCorrect: true },
+				{ answerText: '3', isCorrect: false },
+				{ answerText: '6', isCorrect: false },
+				{ answerText: '4', isCorrect: false },
+			],
+		}
 	];
-
-    
     
     const TopicTitle = "Finance"
     const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -162,37 +145,34 @@ function Quiz() {
 
     const handleAnswerOptionClick = (isCorrect) => {
 		if (isCorrect) {
-			setScore(score + 1);
-		}
-
-		const nextQuestion = currentQuestion + 1;
-		if (nextQuestion < questions.length) {
-			setCurrentQuestion(nextQuestion);
-		}
-	};
-
-    const handlePrevOptionClick = () => {
-		const prevQuestion = currentQuestion - 1;
-		if (prevQuestion >= 0) {
-			setCurrentQuestion(prevQuestion);
-		}
-	};
-
-    const handleNextOptionClick = () => {
-		const nextQuestion = currentQuestion + 1;
-		if (nextQuestion < questions.length) {
-			setCurrentQuestion(nextQuestion);
-		}
+            M.toast({html: 'Correct!'})
+            setScore(score + 1);
+		} else {
+            M.toast({html: 'Incorrect!'})
+        }
+		if (currentQuestion != questions.length - 1) {
+			setCurrentQuestion(currentQuestion + 1);
+		} else {
+            if (score >= 4 || (score == 3 && isCorrect)) {
+                const user = JSON.parse(localStorage.getItem("user"));
+                const url = "https://young-savannah-91729.herokuapp.com/users/changeCoins"
+                axios
+                .post(url, {id: user._id, coins: 5})
+                .then((response) => {
+                        M.toast({html: response.data.message});
+                    })
+                    .catch((error) => {
+                        console.log(error);
+                }); 
+            }
+            navigate('../home');
+        }
 	};
 
     return(
         <div style = {overallStyle}>
-            <button style = {leftButtonStyle} onClick={() => handlePrevOptionClick()}>
-                &lt;
-            </button>
             <div style = {boardStyle}>
                 <h2 style = {topicStyle}>{TopicTitle}</h2>
-                <div style = {scoreStyle}>Current Score: {score}</div>
                 <div style = {questionStyle}>
                     <p>Question {currentQuestion + 1}: {questions[currentQuestion].questionText}</p>
                 </div>
@@ -202,9 +182,6 @@ function Quiz() {
                     ))}
                 </div>
             </div>
-            <button style = {rightButtonStyle} onClick={() => handleNextOptionClick()}>
-                &gt;
-            </button>
         </div>
     )
 }
