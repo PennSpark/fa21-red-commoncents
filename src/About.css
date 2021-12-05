@@ -108,7 +108,7 @@
     margin-top: 250px;
     height: 220px;
     width: 220px;
-    background-color: #C4C4C4;
+    background-color: #E5F8E2;
     border-radius: 50%;
     display: inline-block;
   }
@@ -131,4 +131,28 @@
   .our-awards h1{
     text-align: center;
     font-size: 50px;
+  }
+
+  .flex-container2 {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-between  ;
+  } 
+
+  .award-image {
+    align-items: center;
+    border-radius: 30px;
+    background-color: #B7DFFA;
+    height: 245px;
+    width: 30%;
+  } 
+
+  .recognition {
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
   }
