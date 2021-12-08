@@ -94,6 +94,24 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            <div class = "desktop-16">
+                <div class = "upper-container">
+                        <div class = "learn-about">
+                            <h1>Learn about our...</h1>
+                        </div>
+                        <div class = "board-of-directors">
+                            <p>Board of Directors</p>
+                        </div>
+                </div>
+                <div class = "lower-container">
+                    <div class = "donate-text">
+                        <p> Something about us being a non profit and how being a partner will help us achieve our mission</p>
+                    </div>
+                    <div class = "donate-button">
+                        <p>Donate Today</p>
+                    </div>
+                </div>
+            </div>
         </div>    
     )
 }
