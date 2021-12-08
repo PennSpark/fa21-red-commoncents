@@ -18,13 +18,13 @@ function Quiz() {
         position: 'relative',
         width: 213,
         height: 16,
-        left: 950,
+        left: 900,
         top: 20,
 
         fontFamily: 'Inter',
         fontStyle: 'normal',
-        fontWeight: 500,
-        fontSize: 45,
+        fontWeight: 450,
+        fontSize: 40,
         lineHeight: 16,
         /* identical to box height, or 36% */
 
@@ -63,25 +63,14 @@ function Quiz() {
         left: 70,
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'space-between',
+        justifyContent: 'flex-start',
     }
 
     const buttonStyle = {
         width: 500,
         height: 50,
         borderRadius: 30,
-    }
-
-    const scoreStyle = {
-        position: "relative",
-        width: 300,
-        height: 5,
-        left: 70,
-        top: 0,
-        fontFamily: 'Inter',
-        fontStyle: 'normal',
-        fontWeight: 500,
-        fontSize: 20,
+        marginTop: 20
     }
 
     const overallStyle = {
@@ -93,53 +82,94 @@ function Quiz() {
 
     const questions = [
 		{
-			questionText: 'What is 1 + 1?',
+			questionText: 'Not everyone with income needs a budget.',
 			answerOptions: [
-				{ answerText: '9', isCorrect: false },
-				{ answerText: '4', isCorrect: false },
-				{ answerText: '2', isCorrect: true },
-				{ answerText: '82', isCorrect: false },
+				{ answerText: 'TRUE', isCorrect: false },
+				{ answerText: 'FALSE', isCorrect: true },
 			],
 		},
 		{
-			questionText: 'What is 3 * 4?',
+			questionText: 'At least how much of your paycheck should you put towards investing?',
 			answerOptions: [
-				{ answerText: '2', isCorrect: false },
-				{ answerText: '12', isCorrect: true },
-				{ answerText: '93029432', isCorrect: false },
-				{ answerText: 'Undefined', isCorrect: false },
+				{ answerText: '5%', isCorrect: false },
+				{ answerText: '10%', isCorrect: false },
+				{ answerText: '15%', isCorrect: false },
+				{ answerText: '20%', isCorrect: true },
 			],
 		},
 		{
-			questionText: 'What is 0 * 9?',
+			questionText: 'Which is NOT a good way to keep track of a budget?',
 			answerOptions: [
-				{ answerText: '0', isCorrect: true },
-				{ answerText: '1', isCorrect: false },
-				{ answerText: '2', isCorrect: false },
-				{ answerText: '3', isCorrect: false },
+				{ answerText: 'Spreadsheets', isCorrect: false },
+				{ answerText: 'Budgeting Apps', isCorrect: false },
+				{ answerText: 'Envelopes', isCorrect: false },
+				{ answerText: 'Memory', isCorrect: true },
 			],
 		},
 		{
-			questionText: 'What is 4?',
+			questionText: 'Why is a budget important?',
 			answerOptions: [
-				{ answerText: '1', isCorrect: false },
-				{ answerText: '3', isCorrect: false },
-				{ answerText: '6', isCorrect: false },
-				{ answerText: '4', isCorrect: true },
+				{ answerText: 'It is the first step in becoming financially stable', isCorrect: false },
+				{ answerText: 'It forces you to be mindful of your money', isCorrect: false },
+				{ answerText: 'It allows you to have everything you need, some of what you want, and savings for the future', isCorrect: false },
+				{ answerText: 'All of the above', isCorrect: true },
 			],
 		},
         {
-			questionText: 'What is 5?',
+			questionText: 'You have trouble overspending with your credit card. What should you do?',
 			answerOptions: [
-				{ answerText: '5', isCorrect: true },
-				{ answerText: '3', isCorrect: false },
-				{ answerText: '6', isCorrect: false },
-				{ answerText: '4', isCorrect: false },
+				{ answerText: 'Get another credit card', isCorrect: false },
+				{ answerText: 'Get a personal loan', isCorrect: false },
+				{ answerText: 'Use only cash to buy things', isCorrect: true },
+				{ answerText: 'None of the above', isCorrect: false },
+			],
+		},
+        {
+			questionText: 'Which is a good budeting strategy?',
+			answerOptions: [
+				{ answerText: 'Pay Yourself First', isCorrect: false },
+				{ answerText: 'Envelopes', isCorrect: false },
+				{ answerText: 'Zero-Based Budgeting', isCorrect: false },
+				{ answerText: 'All of the above', isCorrect: true },
+			],
+		},
+        {
+			questionText: 'What is an emergency fund?',
+			answerOptions: [
+				{ answerText: 'A loan you take out for emergencies', isCorrect: false },
+				{ answerText: 'Your set of very safe investments in case the stock market crashes', isCorrect: false },
+				{ answerText: 'Cash reserve set aside for unplanned expenses', isCorrect: true },
+				{ answerText: 'None of the above', isCorrect: false },
+			],
+		},
+        {
+			questionText: 'What does 50/30/20 split mean?',
+			answerOptions: [
+				{ answerText: 'You spend 50% of your income on your needs, 30% on your wants, and 20% on your savings', isCorrect: true },
+				{ answerText: 'You spend 50% of your income on your savings, 30% on your needs, and 20% on your wants', isCorrect: false },
+				{ answerText: 'You spend 50% of your income on your needs, 30% on your savings, and 20% on your wants', isCorrect: false },
+				{ answerText: 'You spend 50% of your income on your wants, 30% on your needs, and 20% on your savings', isCorrect: false },
+			],
+		},
+        {
+			questionText: 'When should you start budgeting for retirement?',
+			answerOptions: [
+				{ answerText: 'After graduating from college', isCorrect: false },
+				{ answerText: 'When you get married', isCorrect: false },
+				{ answerText: 'When you get a high-paying job', isCorrect: false },
+				{ answerText: 'ASAP', isCorrect: true },
+			],
+		},
+        {
+			questionText: 'You should prioritize your needs over wants while saving money for the future.',
+			answerOptions: [
+				{ answerText: 'TRUE', isCorrect: true },
+				{ answerText: 'FALSE', isCorrect: false },
 			],
 		}
 	];
     
-    const TopicTitle = "Finance"
+    const TopicTitle = "Budgeting"
     const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [score, setScore] = useState(0);
 
@@ -153,7 +183,7 @@ function Quiz() {
 		if (currentQuestion != questions.length - 1) {
 			setCurrentQuestion(currentQuestion + 1);
 		} else {
-            if (score >= 4 || (score == 3 && isCorrect)) {
+            if (score / questions.length >= 0.8) {
                 const user = JSON.parse(localStorage.getItem("user"));
                 const url = "https://young-savannah-91729.herokuapp.com/users/changeCoins"
                 axios
