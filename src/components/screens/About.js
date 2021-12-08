@@ -105,7 +105,7 @@ const About = () => {
                 </div>
                 <div class = "lower-container">
                     <div class = "donate-text">
-                        <p> Something about us being a non profit and how being a partner will help us achieve our mission</p>
+                        <p>Something about us being a non profit and how being a partner will help us achieve our mission</p>
                     </div>
                     <div class = "donate-button">
                         <p>Donate Today</p>
