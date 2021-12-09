@@ -3,7 +3,7 @@ import {Link, useNavigate} from 'react-router-dom'
 import { userContext } from '../App'
 
 const NavBar = () => {
-    const {state, dispatch} = useContext(userContext)
+    const {state} = useContext(userContext)
     const navigate = useNavigate()
     return (
         <nav>

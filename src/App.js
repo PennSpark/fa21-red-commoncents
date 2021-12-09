@@ -24,7 +24,7 @@ const Routing = () => {
     } else {
       navigate('/signin');
     }
-  }, [dispatch])
+  }, [dispatch, navigate])
   return (
     <Routes>
         <Route path="/home" element={<Home/>} />
