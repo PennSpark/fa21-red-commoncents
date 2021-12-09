@@ -1,6 +1,5 @@
-import React, {useEffect, createContext, useReducer, useContext, useState} from 'react'
+import React, {useEffect, createContext, useReducer, useContext} from 'react'
 import NavBar from './components/Navbar'
-import Footer from './components/Footer'
 import './App.css'
 import './About.css'
 import {BrowserRouter, Route, Routes, useNavigate} from 'react-router-dom'

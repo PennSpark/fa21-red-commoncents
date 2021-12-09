@@ -1,5 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
-import { userContext } from "../../App";
+import React from "react";
 import plant from "../images/sprouting-tree.b4284abd.png";
 
 const Home = () => {

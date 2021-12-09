@@ -1,5 +1,4 @@
-import React, {useEffect, useState, useContext} from 'react'
-import { userContext } from '../../App'
+import React from 'react'
 import speechbubble from "./speechbubble.png"
 import campuschapters from "../images/campus-chapters.jpg"
 import studentevents from "../images/student-events.png"
