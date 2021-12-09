@@ -55,6 +55,9 @@ const About = () => {
                     <div class = "speech-bubble">
                         <img src = {speechbubble} alt = "speechbubble" />
                     </div>
+                    <div class = "speech-text">
+                        <p>This course is a great intro for kids on how to be financially smart. Thank you so much!</p>
+                    </div>
                     <div class = "person">
                     <img src = {person1} alt = "person1" />
                     </div>
@@ -66,10 +69,16 @@ const About = () => {
                     <div class = "speech-bubble1">
                         <img src = {speechbubble} alt = "speechbubble" />
                     </div>
+                    <div class = "speech-text1">
+                        <p>Investing 101 was great! I learned a lot that I didn’t know and it was great to have the recommendations.</p>
+                    </div>
                 </div>
                 <div class = "flex-container1">
                     <div class = "speech-bubble">
                         <img src = {speechbubble} alt = "speechbubble" />
+                    </div>
+                    <div class = "speech-text2">
+                        <p>You guys made the Banking presentation fun, easy to understand, at the same time teaching us a lot of things!</p>
                     </div>
                     <div class = "person">
                     <img src = {person3} alt = "person3" />  

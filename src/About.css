@@ -217,5 +217,30 @@ height: 800px;
     text-decoration: underline; 
     margin: auto;
     font-size: 36px;
+  } 
+  
+  .speech-text p{
+    font-size: 25px;
+    margin-left: -375%;
+    margin-right: 130%;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .speech-text1 p{
+    font-size: 25px;
+    margin-left: -105%;
+    position: relative;
+    z-index: 1;
+    margin-right: 130%;
+    text-align: center;
+  }
+
+  .speech-text2 p{
+    font-size: 25px;
+    margin-left: -300%;
+    margin-right: 130%;
+    margin-top: 50px;
+    text-align: center;
   }
 
