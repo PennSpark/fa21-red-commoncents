@@ -18,15 +18,14 @@ const Routing = () => {
   const navigate = useNavigate()
   const {dispatch} = useContext(userContext)
   useEffect(() => {
-    const user = JSON.parse(localStorage.getItem("user"))
-    dispatch({type:"USER", payload:user})
-    // if (user) {
-    //   console.log(user)
-    //   navigate('../home')
-    // } else {
-    //   navigate('../signin')
-    // }
-  }, [dispatch, navigate])
+    const user = JSON.parse(localStorage.getItem("user"));
+    dispatch({type:"USER", payload:user});
+    if (user) {
+      navigate('../home');
+    } else {
+      navigate('/signin');
+    }
+  }, [dispatch])
   return (
     <Routes>
         <Route path="/home" element={<Home/>} />

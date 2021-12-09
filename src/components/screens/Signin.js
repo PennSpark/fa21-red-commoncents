@@ -128,7 +128,7 @@ const Signin = () => {
             if (result.error) {
                 M.toast({html: result.error})
             } else {
-                M.toast({html: result.message})
+                Signin();
                 navigate('../home')
             }
             })
