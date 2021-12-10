@@ -1,6 +1,5 @@
-import React, {useEffect, createContext, useReducer, useContext, useState} from 'react'
+import React, {useEffect, createContext, useReducer, useContext} from 'react'
 import NavBar from './components/Navbar'
-import Footer from './components/Footer'
 import './App.css'
 import './About.css'
 import {BrowserRouter, Route, Routes, useNavigate} from 'react-router-dom'
@@ -18,18 +17,17 @@ const Routing = () => {
   const navigate = useNavigate()
   const {dispatch} = useContext(userContext)
   useEffect(() => {
-    const user = JSON.parse(localStorage.getItem("user"))
-    dispatch({type:"USER", payload:user})
-    // if (user) {
-    //   console.log(user)
-    //   navigate('../home')
-    // } else {
-    //   navigate('../signin')
-    // }
+    const user = JSON.parse(localStorage.getItem("user"));
+    dispatch({type:"USER", payload:user});
+    if (user) {
+
+    } else {
+      navigate('/signin');
+    }
   }, [dispatch, navigate])
   return (
     <Routes>
-        <Route path="/home" element={<Home/>} />
+        <Route path="/" element={<Home/>} />
         <Route path="/signin" element={<Signin/>} />
         <Route path="/profile" element={<Profile/>} />
 

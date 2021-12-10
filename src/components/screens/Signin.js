@@ -1,4 +1,4 @@
-import React, {useState, useContext, useEffect, useRef, createRef} from 'react'
+import React, {useState, useContext} from 'react'
 import {useNavigate} from 'react-router-dom'
 import { userContext } from '../../App';
 import axios from 'axios';
@@ -128,8 +128,8 @@ const Signin = () => {
             if (result.error) {
                 M.toast({html: result.error})
             } else {
-                M.toast({html: result.message})
-                navigate('../home')
+                Signin();
+                navigate('../')
             }
             })
             .catch((error) => {
@@ -153,7 +153,7 @@ const Signin = () => {
                 localStorage.setItem("user",JSON.stringify(result.user))
                 dispatch({type:"USER", payload: result.user})
                 M.toast({html: result.message})
-                navigate('../home')
+                navigate('../')
             }
             })
             .catch((error) => {

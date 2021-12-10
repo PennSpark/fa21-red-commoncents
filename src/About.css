@@ -101,7 +101,6 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
-    transform: scaleX(-1);
   } 
   
   .person {
@@ -115,6 +114,7 @@
   
   .desktop-15 {
     background-color: #B7DFFA;
+    padding-bottom: 100px;
   }
   
   .awards-container{
@@ -123,7 +123,7 @@
     border-radius: 30px;
     background-color: white;
     height: 410px;
-    width: 80%;
+    width: 90%;
     flex-direction: column;
     margin: auto;
   }
@@ -138,7 +138,7 @@
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
-    justify-content: space-between  ;
+    justify-content: space-between;
   } 
 
   .award-image {
@@ -156,3 +156,90 @@
     margin-right: auto;
     margin-top: 10%;
   }
+
+  .learn-about h1{
+    margin-top: 100px;
+  }
+
+  .board-of-directors { 
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 30px;
+    background-color: white;
+    height: 143px;
+    width: 40%;
+    flex-direction: row;
+  }
+  
+  .board-of-directors p {
+    text-align: center;
+    margin: auto;
+    font-size: 36px;
+  }
+
+  .desktop-16{  
+    margin-top: -100px;
+    background-color: #013a6b;
+    background-image: -webkit-linear-gradient(
+112deg, white 50%, #b7dffa 50%);
+height: 800px;    
+  }
+
+  .lower-container{
+    margin-top: 100px;
+    margin-right: 10%;
+  }
+
+  .donate-text p{
+    margin-left: 55%;
+    width: 45%;
+    font-size: 45px;
+    text-align: right;  
+  }
+
+  .donate-button{
+    margin-left: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #B7DFFA;
+    height: 100px;
+    width: 40%;
+    flex-direction: row;
+  }
+
+  .donate-button p{
+    text-align: center;
+    text-decoration: underline; 
+    margin: auto;
+    font-size: 36px;
+  } 
+  
+  .speech-text p{
+    font-size: 25px;
+    margin-left: -375%;
+    margin-right: 130%;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .speech-text1 p{
+    font-size: 25px;
+    margin-left: -105%;
+    position: relative;
+    z-index: 1;
+    margin-right: 130%;
+    text-align: center;
+  }
+
+  .speech-text2 p{
+    font-size: 25px;
+    margin-left: -300%;
+    margin-right: 130%;
+    margin-top: 50px;
+    text-align: center;
+  }
+

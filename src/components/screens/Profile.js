@@ -1,5 +1,4 @@
-import React, {useEffect, useState, useContext} from 'react'
-import { userContext } from '../../App'
+import React from 'react'
 
 const Profile = () => {
     return (

@@ -1,16 +1,15 @@
-import React, {useContext, useState} from 'react'
+import React, {useContext} from 'react'
 import {Link, useNavigate} from 'react-router-dom'
 import { userContext } from '../App'
 
 const NavBar = () => {
-    const {state, dispatch} = useContext(userContext)
+    const {state} = useContext(userContext)
     const navigate = useNavigate()
     return (
         <nav>
             <div class="nav-wrapper">
-                <Link to= {state ? "/home" : "/signin"} className="brand-logo left">common cents</Link>
+                <Link to= {state ? "/" : "/signin"} className="brand-logo left">common cents</Link>
                 <ul class="right hide-on-med-and-down">
-                    <li><Link to="/home">HOME</Link></li>
                     <li><Link to="/about">ABOUT</Link></li>
                     <li><Link to="/quiz">LEARN</Link></li>
                     <li><Link to="/video">START</Link></li>

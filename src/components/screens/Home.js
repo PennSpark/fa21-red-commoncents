@@ -1,5 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
-import { userContext } from "../../App";
+import React from "react";
 import plant from "../images/sprouting-tree.b4284abd.png";
 
 const Home = () => {
@@ -34,13 +33,11 @@ const Home = () => {
 
                 <h2><u>Our Partners</u></h2>
                 <div class="carousel-container">
-                    <a class="arrow" onclick="plusSlides(-1)">&lt;</a>
                     <div class="impact-container">
                         <Partner text="Spark" />
                         <Partner text="Google" />
                         <Partner text="FB" />
                     </div>
-                    <a class="arrow" onclick="plusSlides(1)">&gt;</a>
                 </div>
             </div>
 
