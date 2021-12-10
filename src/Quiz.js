@@ -21,7 +21,7 @@ function Quiz() {
         left: 900,
         top: 20,
 
-        fontFamily: 'Inter',
+        fontFamily: 'sans-serif',
         fontStyle: 'normal',
         fontWeight: 450,
         fontSize: 40,
@@ -42,7 +42,7 @@ function Quiz() {
         left: 70,
         top: 35,
 
-        fontFamily: 'Inter',
+        fontFamily: 'sans-serif',
         fontStyle: 'normal',
         fontWeight: 500,
         fontSize: 30,
@@ -70,7 +70,8 @@ function Quiz() {
         width: 500,
         height: 50,
         borderRadius: 30,
-        marginTop: 20
+        marginTop: 20,
+        backgroundColor: "white"
     }
 
     const overallStyle = {
