@@ -68,7 +68,7 @@ const About = () => {
                     <div class = "person">
                     <img src = {person2} alt = "person2" />    
                     </div>
-                    <div class = "speech-bubble">
+                    <div class = "speech-bubble1">
                         <img src = {speechbubble2} alt = "speechbubble" />
                     </div>
                     {/* <div class = "speech-text1">
