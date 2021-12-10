@@ -20,14 +20,14 @@ const Routing = () => {
     const user = JSON.parse(localStorage.getItem("user"));
     dispatch({type:"USER", payload:user});
     if (user) {
-      navigate('../home');
+
     } else {
       navigate('/signin');
     }
   }, [dispatch, navigate])
   return (
     <Routes>
-        <Route path="/home" element={<Home/>} />
+        <Route path="/" element={<Home/>} />
         <Route path="/signin" element={<Signin/>} />
         <Route path="/profile" element={<Profile/>} />
 

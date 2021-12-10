@@ -195,7 +195,7 @@ function Quiz() {
                         console.log(error);
                 }); 
             }
-            navigate('../home');
+            navigate('../');
         }
 	};
 

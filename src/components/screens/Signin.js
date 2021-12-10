@@ -129,7 +129,7 @@ const Signin = () => {
                 M.toast({html: result.error})
             } else {
                 Signin();
-                navigate('../home')
+                navigate('../')
             }
             })
             .catch((error) => {
@@ -153,7 +153,7 @@ const Signin = () => {
                 localStorage.setItem("user",JSON.stringify(result.user))
                 dispatch({type:"USER", payload: result.user})
                 M.toast({html: result.message})
-                navigate('../home')
+                navigate('../')
             }
             })
             .catch((error) => {
