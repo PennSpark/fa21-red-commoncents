@@ -1,5 +1,8 @@
-import React from 'react'
-import speechbubble from "./speechbubble.png"
+import React, {useEffect, useState, useContext} from 'react'
+import { userContext } from '../../App'
+import speechbubble1 from "../images/speechbubble1.png"
+import speechbubble2 from "../images/speechbubble2.png"
+import speechbubble3 from "../images/speechbubble3.png"
 import campuschapters from "../images/campus-chapters.jpg"
 import studentevents from "../images/student-events.png"
 import productsuggestions from "../images/product-suggestions.png"
@@ -52,11 +55,11 @@ const About = () => {
                 </div>
                 <div class = "flex-container1">
                     <div class = "speech-bubble">
-                        <img src = {speechbubble} alt = "speechbubble" />
+                        <img src = {speechbubble1} alt = "speechbubble" />
                     </div>
-                    <div class = "speech-text">
+                    {/* <div class = "speech-text">
                         <p>This course is a great intro for kids on how to be financially smart. Thank you so much!</p>
-                    </div>
+                    </div> */}
                     <div class = "person">
                     <img src = {person1} alt = "person1" />
                     </div>
@@ -65,20 +68,20 @@ const About = () => {
                     <div class = "person">
                     <img src = {person2} alt = "person2" />    
                     </div>
-                    <div class = "speech-bubble1">
-                        <img src = {speechbubble} alt = "speechbubble" />
+                    <div class = "speech-bubble">
+                        <img src = {speechbubble2} alt = "speechbubble" />
                     </div>
-                    <div class = "speech-text1">
+                    {/* <div class = "speech-text1">
                         <p>Investing 101 was great! I learned a lot that I didn’t know and it was great to have the recommendations.</p>
-                    </div>
+                    </div> */}
                 </div>
                 <div class = "flex-container1">
                     <div class = "speech-bubble">
-                        <img src = {speechbubble} alt = "speechbubble" />
+                        <img src = {speechbubble3} alt = "speechbubble" />
                     </div>
-                    <div class = "speech-text2">
+                    {/* <div class = "speech-text2">
                         <p>You guys made the Banking presentation fun, easy to understand, at the same time teaching us a lot of things!</p>
-                    </div>
+                    </div> */}
                     <div class = "person">
                     <img src = {person3} alt = "person3" />  
                     </div>

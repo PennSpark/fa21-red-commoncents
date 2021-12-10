@@ -101,7 +101,6 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
-    transform: scaleX(-1);
   } 
   
   .person {
